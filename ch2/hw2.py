@@ -11,6 +11,23 @@ Just like in queries, if the mutation field returns an object type, you can ask 
 print(paragraph)
 
 # Q1: 印出這個段落的長度
+print(len(paragraph))
+
 # Q2: 把文章裡 'GraphQL' 這個單字變全大寫, 其餘單字變全小寫
+str = 'GraphQL'
+print (paragraph.lower().replace((str.lower()), str.upper()))
+
 # Q3: 印出這個段落有多少個英文單字(不含標點符號與空白)
+print(len(paragraph.split()))
+
 # Q4: x = 2, y = 6, 把兩個變數的值交換, 讓他變成 x = 6, y = 2, 只能使用加減乘除, 不能使用第三個變數, 不能使用常數
+x = 2
+y = 6
+
+x = x + y
+y = x - y
+x = x - y
+
+print(x)
+print(y)
+
